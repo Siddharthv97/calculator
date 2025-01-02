@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -12,28 +12,27 @@
 
         <section id="calculator" class="br">
             <div class="display br">
-                <input id="display" type="text" placeholder="0">
+                <input id="display" type="text" placeholder="0" disabled>
             </div>
             <div class="cal_body br">
-                <button class="btn" id="clear" onclick="displayInput('')">C</button>
-                <button class="btn" id="bracket" onclick="displayInput('()')">()</button>
+                <button class="btn" id="clear" onclick="clearDisplay()">Clear</button>
                 <button class="btn" id="modul" onclick="displayInput('%')">%</button>
-                <button class="btn" id="del" onclick="displayInput()"><i class="fa-solid fa-delete-left"></i></button>
-                <button class="btn" id="seven" onclick="displayInput('7')">7</button>
-                <button class="btn" id="eight" onclick="displayInput('8')">8</button>
-                <button class="btn" id="nine" onclick="displayInput('9')">9</button>
+                <button class="btn" id="del" onclick="del()"><i class="fa-solid fa-delete-left"></i></button>
+                <button class="btn" id="seven" onclick="displayInput(7)">7</button>
+                <button class="btn" id="eight" onclick="displayInput(8)">8</button>
+                <button class="btn" id="nine" onclick="displayInput(9)">9</button>
                 <button class="btn" id="multiply" onclick="displayInput('*')"><i class="fa-solid fa-xmark"></i></button>
-                <button class="btn" id="four" onclick="displayInput('4')">4</button>
-                <button class="btn" id="five" onclick="displayInput('5')">5</button>
-                <button class="btn" id="six" onclick="displayInput('6')">6</button>
+                <button class="btn" id="four" onclick="displayInput(4)">4</button>
+                <button class="btn" id="five" onclick="displayInput(5)">5</button>
+                <button class="btn" id="six" onclick="displayInput(6)">6</button>
                 <button class="btn" id="subs" onclick="displayInput('-')"><i class="fa-solid fa-minus"></i></button>
-                <button class="btn" id="one" onclick="displayInput('1')">1</button>
-                <button class="btn" id="two" onclick="displayInput('2')">2</button>
-                <button class="btn" id="three" onclick="displayInput('3')">3</button>
+                <button class="btn" id="one" onclick="displayInput(1)">1</button>
+                <button class="btn" id="two" onclick="displayInput(2)">2</button>
+                <button class="btn" id="three" onclick="displayInput(3)">3</button>
                 <button class="btn" id="add" onclick="displayInput('+')"><i class="fa-solid fa-plus"></i></button>
-                <button class="btn" id="zero" onclick="displayInput('0')">0</button>
+                <button class="btn" id="zero" onclick="displayInput(0)">0</button>
                 <button class="btn" id="fullStop" onclick="displayInput('.')">.</button>
-                <button class="btn" id="equal" onclick="displayInput('=')"><i class="fa-solid fa-equals"></i></button>
+                <button class="btn" id="equal" onclick="equal()"><i class="fa-solid fa-equals"></i></button>
 
             </div>
 

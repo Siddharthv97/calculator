@@ -75,6 +75,9 @@ main {
     background-color: #fff;
 }
 
+.btn:first-child{
+    grid-column: span 2;
+}
 .btn:nth-last-child(3) {
     grid-column: span 2;
 }
