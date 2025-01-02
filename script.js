@@ -17,13 +17,3 @@ function equal(){
 function del(){
     display.value = display.value.slice(0, -1);
 }
-
-function bracket(){
-    br.addEventListener("click", (e)=>{
-        e.target.displayInput = '('
-        console.log("Clicked")
-    })
-}
-// else{
-//     console.log("else was clicked")
-// }
